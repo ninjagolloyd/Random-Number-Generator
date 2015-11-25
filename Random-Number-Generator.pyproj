@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{ca5c13c7-3e91-48d3-b7f7-5bf980eda9f9}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>rng.py</StartupFile>
+    <StartupFile>ClassicRNG.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -21,10 +21,19 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="rng.py" />
+    <Compile Include="Pokemon Trainer RNG\TrainerRNG.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassicRNG.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pokemon Trainer RNG\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pokemon Trainer RNG\Pokemon.json" />
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
