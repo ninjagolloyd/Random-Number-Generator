@@ -1,5 +1,5 @@
-#Written by Stephen (Jack) Henry
-#Python methods used/exercised:
+﻿# Written by Stephen (Jack) Henry 25th November 2015
+# Python methods used/exercised:
 # 1. Importing modules (import)
 # 2. ErrorHandling (While/Except) Statement
 # 3. Saving a variable as a int (Interger) int() eg. str()
@@ -21,21 +21,21 @@ print('Please select the scope of the numbers')
 print('If you want to generate a 4 digit pin use 0 and 9 with a 4 random numbers')
 print('')
 
-#First Number: With Error Handling if the user puts in letters. 
+
 while True:
     try:
         n1 = int(input('Pick your first number: '))
         break
     except ValueError:
-        print("Oops! Please enter a valid number. Try again...")
+        print("Oops! Please enter a valid number. Try again...") #First Number: With Error Handling if the user puts in letters. 
 
-#Second Number: With Error Handling if the user puts in letters. 
+
 while True:
     try:
         n2 = int(input('Pick your second number: '))
         break
     except ValueError:
-        print("Oops! Please enter a valid number. Try again...")
+        print("Oops! Please enter a valid number. Try again...") #Second Number: With Error Handling if the user puts in letters. 
 
 #Statement to show the numbers the user has chosen with lowest going first
 if n1 < n2:
@@ -58,7 +58,7 @@ if int(n1) > int(n2):
 #print(n4)
 #time.sleep(3)
 
-# Writing in smart detection of numbers: There must be a better way.
+# Writing in smart detection of numbers: There must be a better way. But nesting the else command seems to make python ignore the updated variable.
 if n1 == 1 and n2 == 6 :
     print('You have chosen to role a six sided die')
 if n2 == 1 and n1 == 6 :
@@ -76,7 +76,7 @@ print('')
 # This is some fluff
 print('')
 print('Generating', Scope, 'RNG Variables!')
-time.sleep(.5)
+time.sleep(.5) # This controls the time between messages
 print("Forcing the RNG Monkey to work for it's food...")
 time.sleep(1)
 print('')
