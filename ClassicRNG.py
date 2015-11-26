@@ -60,9 +60,9 @@ if int(n1) > int(n2):
 
 # Writing in smart detection of numbers: There must be a better way. But nesting the else command seems to make python ignore the updated variable.
 if n1 == 1 and n2 == 6 :
-    print('You have chosen to role a six sided die')
+    print('You have chosen to roll a six sided die')
 if n2 == 1 and n1 == 6 :
-    print('You have chosen to role a six sided die')
+    print('You have chosen to roll a six sided die')
 if n1 == 0 and n2 == 9 :
     print('You have chosen to generate a single digit number')
 if n2 == 1 and n1 == 9 :
